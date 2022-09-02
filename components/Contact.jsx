@@ -20,11 +20,11 @@ const Contact = () => {
      
  
       <div className='my-auto mx-auto'>
-
-<IoMdCall size={25} ></IoMdCall>
+<Link href='https://www.truecaller.com/' >
+<IoMdCall size={25} className='ease-in duration-75 hover:scale-125 cursor-pointer'></IoMdCall></Link>
 <h1 className=' px-8 text-xl'>9999572480</h1>
-
-<SiGmail size={25}></SiGmail>
+<button onClick={() => window.location = 'mailto:sagarkasana482@gmail.com'} className='ease-in duration-75 hover:scale-125'>
+<SiGmail size={25}></SiGmail></button>
 <h1 className='px-2 text-xl'>sagarkasana482@gmail.com</h1>
 </div>
       </div>    
