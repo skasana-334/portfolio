@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { FaBars, FaEnvelopeSquare,  FaGithub,  FaInstagram,  FaLinkedin, FaTimes } from 'react-icons/fa'
 const Nav = () => {
   const[bar,setbar]=useState(false);
