@@ -58,7 +58,7 @@ const Experience = () => {
     <div id='experience' className='w-full '>
         <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
        <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>Tech stacks</h2>
-       <p className='py-4 max-w-3xl'>Thaese are the technologies i&apos;ve worked with.I have explored range of technologies in front-end developement.
+       <p className='py-4 max-w-3xl'>These are the technologies i&apos;ve worked with.I have explored range of technologies in front-end developement.
      </p>
        <div className='grid md:grid-cols-3 gap-10'>
        {
