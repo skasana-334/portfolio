@@ -33,13 +33,13 @@ des:'👉🏻It is basically a animated site in which user can get the visual id
   des:'➡️ This is basically a weather website in which user can get the current temperature of the desired city by searching the city name.In this website user can also get the maximum and minimum temperature of the city.'
 },
 {
-    id:4,
-    title:'Weather App',
-  src:'/weather.jpg',
-  name:'weather',
-  url:'https://weather334.netlify.app/',
-  git:'https://github.com/skasana-334/Weather-334',
-  des:'➡️ This is basically a weather website in which user can get the current temperature of the desired city by searching the city name.In this website user can also get the maximum and minimum temperature of the city.'
+     id:4,
+    title:'My Portfolio',
+  src:'/portfolio.png',
+  name:'myportfolio',
+  url:'https://portfolio334.vercel.app/',
+  git:'https://github.com/skasana-334/portfolio',
+  des:'❕This is my personal portfolio website which contains all the information about me such as my skills,projects and education.'
 }
 ] 
 
