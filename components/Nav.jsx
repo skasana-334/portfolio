@@ -85,7 +85,7 @@ const Nav = () => {
       <div className='flex  items-center justify-center rounded-full shadow-md shadow-green-300  p-3 cursor-pointer  hover:scale-105 ease-out duration-200'><FaGithub size={25}></FaGithub></div>
       </Link>
       </div>
-      <Link href='instagram.com'>
+      <Link href='https://www.instagram.com/'>
       <div className='grid grid-cols-1 gap-10 mx-auto w-2/5 py-4'>
       <div className='flex justify-center items-center rounded-full shadow-md shadow-green-300  p-3 cursor-pointer  hover:scale-105 ease-out duration-200'><FaInstagram size={25}></FaInstagram></div>
   
