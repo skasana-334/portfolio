@@ -23,10 +23,12 @@ export const getStaticProps=async()=>{
       name:'weather',
     },
     {
+   
         id:4,
-        title:'Weather App',
-      src:'/weather.jpg',
-      name:'weather',
+        title:'My Portfolio',
+      src:'/portfolio.png',
+      name:'myportfolio',
+    
     }
 ]
 return{
