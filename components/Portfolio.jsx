@@ -14,7 +14,7 @@ const Portfolio = () => {
         id:2,
         title:'Dhoondo',
       src:'/google.jpg',
-      url:'https://dhoondo.netlify.app/',
+      url:'https://github.com/skasana-334/Dhoondo-334',
     },
     {
         id:3,
