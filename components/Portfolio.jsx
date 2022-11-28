@@ -24,7 +24,7 @@ const Portfolio = () => {
     },
   ]
   return (
-    <div id='portfolio' className='w-full'>
+    <div id='projects' className='w-full'>
         <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
        <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>projects</h2>
        <p className='py-4 max-w-3xl '>These are some of my projects which is built using front end technologies and frameworks such as Reactjs Next.js and Tailwind Css.
