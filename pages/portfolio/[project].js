@@ -19,7 +19,7 @@ des:'👉🏻It is basically a animated site in which user can get the visual id
     title:'Dhoondo',
   src:'/google.jpg',
   name:'dhoondo',
-  url:'https://dhoondo.netlify.app/',
+  url:'https://github.com/skasana-334/Dhoondo-334',
   git:'https://github.com/skasana-334/Dhoondo-334',
   des:'👉 Dhoondo is a google clone which is based on react js in which we can search anything and get the data in form of images,videos ,links etc.'
 },
