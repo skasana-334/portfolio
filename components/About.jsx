@@ -12,7 +12,7 @@ const About = () => {
     </div>
    </div>
    <div className='flex justify-center items center gap-x-4  '>
-    <Link href='/skresume.pdf' download={true}>
+    <Link href='/apnaa(1).pdf' download={true}>
 <div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-7 my-6 tracking-wider group cursor-pointer '>Resume
   <span className='-rotate-90 group-hover:translate-x-3'><MdExpandMore size={25}></MdExpandMore></span>
   </div>
