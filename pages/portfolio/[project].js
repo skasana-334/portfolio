@@ -7,6 +7,24 @@ import Image from 'next/image'
 const portfolios=[
   {
     id:1,
+    title:'Resume Builder',
+  src:'/resumebuild.png',
+  name:'resumebuild',
+  url:'https://resumebuild334.netlify.app/',
+  git:'https://github.com/skasana-334/ResumeBuild',
+des:'👉🏻Resume Builder is a web application that helps users create professional resumes quickly and easily. With its user-friendly interface and various color options for downloading, users can build a resume that highlights their skills, experience, and achievements.  With Resume Builder, users can create a polished and professional resume in just a few clicks. '
+},
+{
+  id:2,
+  title:'Videomeet',
+src:'/meet.png',
+name:'meet',
+url:'https://videomeet334.netlify.app/',
+git:'https://github.com/skasana-334/videomeet',
+des:'➡ A video chat application allows users to communicate with each other through real-time video and audio. With its  easy-to-use features, users can connect with friends, family, or colleagues from anywhere in the world. The application typically includes features such as group video calls, screen sharing, and instant messaging, making it a versatile tool for both personal and professional communication. With a video chat application, users can stay connected and collaborate effectively, no matter where they are.'
+},
+  {
+    id:3,
     title:'Tower Of Hanoi',
   src:'/toh.jpg',
   name:'toh334',
@@ -15,16 +33,16 @@ const portfolios=[
 des:'👉🏻It is basically a animated site in which user can get the visual idea of the one of the famous problem of recursion known as Tower Of Honoi.In this site there are two buttons one for moving the disks and one for to know the future valid moves.'
 },
 {
-    id:2,
+    id:4,
     title:'Dhoondo',
   src:'/google.jpg',
   name:'dhoondo',
-  url:'https://github.com/skasana-334/Dhoondo-334',
+  url:'https://dhoondo.netlify.app/',
   git:'https://github.com/skasana-334/Dhoondo-334',
   des:'👉 Dhoondo is a google clone which is based on react js in which we can search anything and get the data in form of images,videos ,links etc.'
 },
 {
-    id:3,
+    id:5,
     title:'Weather App',
   src:'/weather.jpg',
   name:'weather',
@@ -33,7 +51,7 @@ des:'👉🏻It is basically a animated site in which user can get the visual id
   des:'➡️ This is basically a weather website in which user can get the current temperature of the desired city by searching the city name.In this website user can also get the maximum and minimum temperature of the city.'
 },
 {
-     id:4,
+    id:6,
     title:'My Portfolio',
   src:'/portfolio.png',
   name:'myportfolio',
@@ -77,13 +95,13 @@ const project = ({ portfolio: { title, src,url,git,des} }) => {
             </Link>
         </div>
         <h1 className='text-2xl font-bold text-blue-400 capitalize md:text-left text-center mt-2'>{title}</h1>
-        <div className='mx-auto my-8'>
-           <Image src={src} alt='toh' width='700' height='400' className='rounded-lg'></Image>
+        <div className='mx-auto my-8 rounded-lg'>
+           <Image src={src} alt='toh' width='700' height='400' ></Image>
         </div>
         <h2 className='text-blue font-semibold text-3xl md:text-left text-blue-400 my-4'>
           Description
         </h2>
-        <p className='py-4 '>{des}</p>
+        <p className='py-4 text-xl'>{des}</p>
         <div className='flex justify-center items center gap-x-4  '>
             <Link href={`${url}`}>
 <div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-5 my-6 tracking-wider group cursor-pointer '>demo
