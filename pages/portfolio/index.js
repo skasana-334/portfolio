@@ -5,30 +5,40 @@ import Image from 'next/image'
 export const getStaticProps=async()=>{
   const portfolios=[
     {
-        id:1,
+      id:1,
+      title:'Resume Builder',
+    src:'/resumebuild.png',
+    name:'resumebuild',
+  },
+  {
+    id:2,
+    title:'Videomeet',
+  src:'/meet.png',
+  name:'meet',
+},
+    {
+        id:3,
         title:'Tower Of Hanoi',
       src:'/toh.jpg',
       name:'toh334',
     },
     {
-        id:2,
+        id:4,
         title:'Dhoondo',
       src:'/google.jpg',
       name:'dhoondo',
     },
     {
-        id:3,
+        id:5,
         title:'Weather App',
       src:'/weather.jpg',
       name:'weather',
     },
     {
-   
-        id:4,
+        id:6,
         title:'My Portfolio',
       src:'/portfolio.png',
       name:'myportfolio',
-    
     }
 ]
 return{
@@ -45,8 +55,8 @@ const ourportfolio = ({portfolios}) => {
       {
         portfolios.map(({id,title,src,name})=>(
           <Link key={id} href={`/portfolio/${name}`}>
-            <div className='cursor-pointer   group shadow-md shadow-sky-600 overflow-hidden rounded-md '>
-              <Image src={src} alt={title} width='900' height='400' className='rounded-md duration-200 hover:scale-110' ></Image>
+            <div className='cursor-pointer   group shadow-md shadow-sky-600 overflow-hidden rounded-md  '>
+              <Image src={src} alt={title} width='900' height='400' className='rounded-md duration-200 hover:scale-110 ' ></Image>
               <h2 className='text-center text-base capitalize  group-hover:underline underline-offset-4 duration-200 my-2 text-violet-500'>{title}</h2>
               
             </div>
