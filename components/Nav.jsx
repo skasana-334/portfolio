@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { FaBars, FaEnvelopeSquare,  FaGithub,  FaInstagram,  FaLinkedin, FaTimes } from 'react-icons/fa'
+import { FaBars,   FaGithub,  FaInstagram,  FaLinkedin, FaTimes } from 'react-icons/fa'
 const Nav = () => {
   const[bar,setbar]=useState(false);
   const[pgscroll,setpgscroll]=useState(false);
@@ -16,26 +16,31 @@ const Nav = () => {
     },
      {
       id:2,
-      link:'projects'
+      link:'portfolio'
     },
     {
-      id:3,
+      id:2,
+      link:'coding'
+    },
+    {
+      id:4,
       link:'skills'
     },
      {
-      id:4,
-      link:'about me'
+      id:5,
+      link:'about '
     },
     
      {
-      id:5,
-      link:'contact me'
+      id:6,
+      link:'contact '
     },
   ]
   return (
-    <div className={`w-full h-20 z-10 fixed bg-white text-black  ${pgscroll&&'bg-[#3D3C42] text-[#fff]'}`}>
+    <div className={`w-full h-20 z-10 fixed ${`bg-white`} text-black  ${pgscroll&&'bg-[#3D3C42] text-[#faf4f4]'}`}>
       <div className='flex justify-between items-center p-4 w-full h-full max-w-screen-xl mx-auto'>
-        <Link href='/'><h1 className='text-3xl lg:text-4xl uppercase underline underline-offset-2 cursor-pointer tracking-wider '>sagar</h1></Link>
+        <Link href='/#home'>
+            <h1 className='text-3xl lg:text-4xl uppercase underline underline-offset-2 cursor-pointer tracking-wider '>sagar</h1></Link>
         <div>
 
             <ul className='hidden md:flex'>
@@ -56,7 +61,7 @@ const Nav = () => {
         </div>
       </div>
       <div className={bar?'md:hidden fixed w-full h-full bg-black/70 backdrop-blur left-0 top-0':""}>
-<div className={bar?'fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-gray-600 to-blue-300 text-white p-8 ease-in duration-500':'fixed top-0 left-[-100%]'}>
+<div className={bar?'fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r  text-white p-8 ease-in duration-500':'fixed top-0 left-[-100%]'}>
   <div>
     <div className='flex w-full justify-between items-center'>
       <Link href='/#home'>
