@@ -9,14 +9,15 @@ const Homepage = () => {
         <div className='mx-auto overflow-hidden rounded-full'>
 <Image src='/sagar.jpg' alt='no pic' width='256' height='300'/>
 </div>
-<h1 className='text-7xl text-gray-500 '>Front-End Developer</h1>
-<p className='max-w-sm text-xl text-center t'>I am a front-end developer who loves to work in the field of Software Developement using React Tailwind and Next.js</p>
-<Link href='/#about me'>
-  <div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-3 my-6 tracking-wider group cursor-pointer'>Know more
-  <span className='-rotate-90 group-hover:rotate-0 '><MdExpandMore size={25}></MdExpandMore></span>
+<h1 className='text-7xl text-gray-500 '>“Hi <span className='text-cyan-600'>there!</span>”</h1>
+<p className='max-w-sm text-xl text-center t'>“Welcome to my portfolio! I’m an engineering student with a good knowledge of DSA and interseted front-end development. Take a look at my work and see what I can do.”</p>
+<div className='flex justify-center items center gap-x-4  '>
+    <Link href='/skresume.pdf' download={true}>
+<div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-7 my-6 tracking-wider group cursor-pointer '>Resume
+  <span className='-rotate-90 group-hover:translate-x-3'><MdExpandMore size={25}></MdExpandMore></span>
   </div>
-  
-</Link>
+  </Link>
+</div>
       </div>
     
     </div>
