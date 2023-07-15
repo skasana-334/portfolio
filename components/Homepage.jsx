@@ -10,7 +10,7 @@ const Homepage = () => {
 <Image src='/sagar.jpg' alt='no pic' width='256' height='300'/>
 </div>
 <h1 className='text-7xl text-gray-500 '>“Hi <span className='text-cyan-600'>there!</span>”</h1>
-<p className='max-w-sm text-xl text-center t'>“Welcome to my portfolio! I’m an engineering student with a good knowledge of DSA and interseted front-end development. Take a look at my work and see what I can do.”</p>
+<p className='max-w-sm text-xl text-center t'>“Welcome to my portfolio! I am an engineering student with a strong understanding of Data Structures and Algorithms and  interested in front-end development. Please take a look at my work to see what I am capable of.”</p>
 <div className='flex justify-center items center gap-x-4  '>
     <Link href='/skresume.pdf' download={true}>
 <div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-7 my-6 tracking-wider group cursor-pointer '>Resume
