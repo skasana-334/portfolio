@@ -28,12 +28,12 @@ const Nav = () => {
     },
      {
       id:5,
-      link:'about '
+      link:'about'
     },
     
      {
       id:6,
-      link:'contact '
+      link:'contact'
     },
   ]
   return (
