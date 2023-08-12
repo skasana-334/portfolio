@@ -3,7 +3,7 @@ import {MdExpandMore} from 'react-icons/md'
 import Link from 'next/link'
 const About = () => {
   return (
-    <div id='about me' className='w-full '>
+    <div id='about' className='w-full '>
     <div className='max-w-screen-xl mx-auto md:text-left text-center px-4 py-8'>
    <h2 className='text-7xl md:text-7xl tracking-wider text-green-600 capitalize  '>About Me</h2>
    <div className='shadow-md shadow-sky-400 my-5 '>
