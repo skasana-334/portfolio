@@ -7,7 +7,7 @@ import {SiGmail} from 'react-icons/si'
 import Link from 'next/link'
 const Contact = () => {
   return (
-      <div id='contact me' className='w-full'>
+      <div id='contact' className='w-full'>
         <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
        <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>contact me</h2>
        <div className='flex flex-col md:flex-row gap-8 mt-4 shadow-lg shadow-blue-400'>
