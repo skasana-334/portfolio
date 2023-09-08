@@ -9,7 +9,7 @@ const About = () => {
    <div className='shadow-md shadow-sky-400 my-5 '>
     <div className='py-4 max-w-2xl mx-auto text-xl'>I&apos;m a Final year undergratuate pursuing B.Tech in Information Technology from Harcout Butler Technical University.<br></br>
     I am good in problem solving and in DSA(Data Structures & Algorithms) and excel in problem-solving.<br></br>
-    I am interested in Front-End Developement also and i have knowledge of Html,Css and Frameworks of Javascript such as React.js and Tailwind css.
+    I am interested in Front-End Development also and i have knowledge of Html,Css and Frameworks of Javascript such as React.js and Tailwind css.
     
     </div>
    </div>
