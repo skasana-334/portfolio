@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import contact from '../public/exp/contact.jpg'
+import contact from '../public/skill/contact.jpg'
 import { FaGithub,  FaLinkedin } from 'react-icons/fa'
 import {IoMdCall} from 'react-icons/io'
 import {SiGmail} from 'react-icons/si'
@@ -9,11 +9,11 @@ const Contact = () => {
   return (
       <div id='contact' className='w-full'>
         <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
-       <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>contact me</h2>
+       <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>contact </h2>
        <div className='flex flex-col md:flex-row gap-8 mt-4 shadow-lg shadow-blue-400'>
         <div className='w-full md:w-1/2 h-full rounded-xl p-4 mt-4 flex flex-col'>
             <Image src={contact}  alt='no pic' width='450' height='300 ' className='rounded-2xl'/>
-            <p className='text-2xl pt-2 pb-3'>I am open to talk regarding internships or full-time opportunities.
+            <p className='text-2xl pt-2 pb-3'>I am open to talk regarding full-time opportunities.
             <div>
             Feel free to contact me using your preferred medium.</div></p>
           
