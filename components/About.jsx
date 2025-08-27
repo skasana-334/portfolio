@@ -17,7 +17,7 @@ const About = () => {
             </p>
             <p>
               I’m a B.Tech graduate in Information Technology from Harcourt
-              Butler Technical University with 1+ years of experience.
+              Butler Technical University with 1+ years of experience in Backend Development.
             </p>
             <p>
               I have a strong foundation in Data Structures & Algorithms (DSA)
