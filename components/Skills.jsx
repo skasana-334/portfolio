@@ -19,6 +19,7 @@ import github from '../public/skill/github.png'
 import postman from '../public/skill/postman.png'
 import figma from '../public/skill/figma.png'
 import oracle from '../public/skill/oracle.png'
+
 const Skills = () => {
   const languages = [
     { id: 1, title: "Java", src: java, clr: 'shadow-orange-500' },
@@ -40,7 +41,7 @@ const Skills = () => {
     { id: 1, title: "Spring Boot", src: spring, clr: 'shadow-green-600' },
     { id: 2, title: "REST APIs", src: rest, clr: 'shadow-yellow-600' },
     { id: 3, title: "MySQL", src: mysql, clr: 'shadow-blue-600' },
-     { id: 4, title: "Oracle", src: oracle, clr: 'shadow-red-600' },
+    { id: 4, title: "Oracle", src: oracle, clr: 'shadow-red-600' },
   ]
 
   const tools = [
@@ -55,7 +56,7 @@ const Skills = () => {
       <div className='grid md:grid-cols-4 gap-3'>
         {items.map(({ id, title, src, clr }) => (
           <div key={id} className={`flex flex-col lg:flex-row gap-4 items-center justify-center shadow-lg ${clr} rounded-xl hover:scale-105 ease-in duration-300 p-6`}>
-            <Image src={src} width='72' height='72' alt={title} />
+            <Image src={src} width={72} height={72} alt={title} />
             <h3 className='font-semibold capitalize text-white'>{title}</h3>
           </div>
         ))}
@@ -64,11 +65,11 @@ const Skills = () => {
   )
 
   return (
-    <div id='skills' className='w-full '>
+    <div id='skills' className='w-full'>
       <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
         <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize'>Skills</h2>
         <p className='py-4 max-w-3xl text-xl'>
-          These are the technologies I've worked with.<br />
+          These are the technologies I&apos;ve worked with.<br />
           I have explored a wide range of technologies in both Frontend and Backend development.
         </p>
 
