@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import gfg from '../public/exp/gfg.png'
-import leetcode from '../public/exp/leetcode.png'
-import hackerrank from '../public/exp/hackerrank.png'
+import gfg from '../public/skill/gfg.png'
+import leetcode from '../public/skill/leetcode.png'
+import hackerrank from '../public/skill/hackerrank.png'
 const Coding = () => {
     const profile=[
     {
