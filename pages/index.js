@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
-import Photo from '../components/Photo'
 import Experience from '../components/Experience'
 import Homepage from '../components/Homepage'
 import Portfolio from '../components/Portfolio'
