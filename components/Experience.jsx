@@ -1,122 +1,89 @@
-import React from 'react'
-import html from '../public/exp/html.png'
-import css from '../public/exp/css.png'
-import react from '../public/exp/react.png'
-import bootstrap from '../public/exp/bootstrap.jpeg'
-import figma from '../public/exp/figma.png'
-import node from '../public/exp/node.jpg'
-import sql from '../public/exp/sql.png'
-import js from '../public/exp/js.png'
-import cpp from '../public/exp/cpp.png'
-import next from '../public/exp/next.png'
-import tailwind from '../public/exp/tailwind.png'
+import { useState } from "react";
 
-import Image from 'next/image'
-const Experience = () => {
-  const lang=[
+export default function Experience() {
+  const experiences = [
     {
-      id:1,
-      title:"html",
-      src:html,
-      clr:'shadow-orange-500'
+      company: "Tata Consultancy Services (TCS)",
+      duration: "June 2024 – Present",
+      role: "Software Developer — C++, Java, Spring Boot, Microservices, Linux, Oracle",
+      location: "Bangalore, India",
+      points: [
+        "Contributed as a Backend Developer in building and enhancing an enterprise-grade Anti-Money Laundering (AML) system, driving automation, risk detection, and regulatory compliance across millions of customer records.",
+        "Built a watchlist update feature that automated keyword imports from external sources, eliminated batch failures, and improved daily processing speed by 40%.",
+        "Integrated AI-generated risk score ingestion by parsing CSV data and mapping scores to existing customer entities. Enabled instant alert generation for high-risk profiles based on thresholds, reducing detection time by 100% compared to previous EOD batch jobs.",
+        "Designed and deployed scalable RESTful APIs using Java and Spring Boot to support key AML modules, ensuring secure and maintainable backend services.",
+      ],
     },
     {
-      id:2,
-      title:"css",
-      src:css,
-      clr:'shadow-blue-500'
+      company: "Travel Raga Holidays Pvt. Ltd.",
+      duration: "Nov 2022 – Dec 2022",
+      role: "Frontend Web Developer Intern (React.js)",
+      location: "Remote",
+      points: [
+        "Designed and developed responsive UI components for the company’s website using React.js, transforming Figma mockups into production-ready code.",
+        "Implemented lazy loading, dialog modals, and React Hooks (useState, useEffect, useRef) to manage dynamic behaviors, improving performance on slower networks.",
+        "Ensured cross-device responsiveness using CSS Grid and Flexbox, contributing to a 30% drop in mobile bounce rate.",
+      ],
     },
-    {
-      id:3,
-      title:"javasript",
-      src:js,
-      clr:'shadow-yellow-500'
-    },
-    {
-      id:4,
-      title:"C++",
-      src:cpp,
-      clr:'shadow-blue-800'
-    },
-    {
-      id:5,
-      title:"SQL",
-      src:sql,
-      clr:'shadow-sky-500'
-    },
-  ]
-  const frame=[
-    {
-      id:1,
-      title:"React",
-      src:react,
-      clr:'shadow-green-300'
-    },
-    {
-      id:2,
-      title:"Tailwind",
-      src:tailwind,
-      clr:'shadow-teal-500'
-    },
-    {
-      id:3,
-      title:"Next.js",
-      src:next,
-      clr:'shadow-white-500'
-    },
-    {
-      id:4,
-      title:"Bootstrap",
-      src:bootstrap,
-      clr:'shadow-violet-800'
-    },
-    {
-      id:5,
-      title:"Node.js",
-      src:node,
-      clr:'shadow-green-800'
-    },
-    {
-      id:6,
-      title:"figma",
-      src:figma,
-      clr:'shadow-orange-700'
-    },
-  ]
+  ];
+
   return (
-    <div id='skills' className='w-full '>
-        <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
-       <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>Skills</h2>
-       <p className='py-4 max-w-3xl text-xl'>These are the technologies i&apos;ve worked with.<br></br>
-       I have explored range of technologies in front-end developement.
-     </p>
-     <div >
-     <h4 className='text-5xl md:text-7xl tracking-wider text-center text-green-600 capitalize mb-4'>Languages</h4>
-       <div className='grid md:grid-cols-4 gap-3 mb-4 pb-4'>
-       {
-        lang.map(({id,title,src,clr})=>(
-         <div key={id} className={`flex flex-col lg:flex-row gap-10 lg:gap-2 items-center justify-between shadow-lg  ${clr} rounded-xl hover:scale-105 ease-in duration-300 p-6 mt-2 `}>
-<Image src={src}  width='72' height='72' alt={title}></Image>
-<h3 className='font-semibold capitalize text-white'>{title}</h3>
-          </div>
-        ))
-       }
-       </div>
-       <h4 className='text-5xl md:text-7xl tracking-wider text-center text-green-600 capitalize mt-4 mb-4'>Frameworks & Others</h4>
-       <div className='grid md:grid-cols-3 gap-3'>
-       {
-        frame.map(({id,title,src,clr})=>(
-         <div key={id} className={`flex flex-col lg:flex-row gap-10 lg:gap-2 items-center justify-between shadow-lg  ${clr} rounded-xl hover:scale-105 ease-in duration-300 p-6 mt-2 `}>
-<Image src={src}  width='72' height='72' alt={title}></Image>
-<h3 className='font-semibold capitalize text-white'>{title}</h3>
-          </div>
-        ))
-       }
-       </div>
+    <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900">
+      <div className="max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200">
+          Experience
+        </h2>
+
+        <div className="space-y-8">
+          {experiences.map((exp, idx) => (
+            <ExperienceCard key={idx} exp={exp} />
+          ))}
+        </div>
       </div>
-    </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default Experience
+function ExperienceCard({ exp }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="flex flex-col md:flex-row bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300">
+      
+      {/* Left Section - Company Info */}
+      <div className="md:w-1/3 border-b md:border-b-0 md:border-r border-gray-300 dark:border-gray-600 pb-4 md:pb-0 md:pr-4">
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+          {exp.company}
+        </h3>
+        <p className="text-lg text-blue-600 dark:text-blue-400 font-semibold mt-2">
+          {exp.role}
+        </p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          📍 {exp.location}
+        </p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          ⏳ {exp.duration}
+        </p>
+      </div>
+
+      {/* Right Section - Points */}
+      <div className="md:w-2/3 md:pl-6 mt-4 md:mt-0">
+        <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
+          {(expanded ? exp.points : exp.points.slice(0, 2)).map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+
+        {/* Show Read More only if more than 2 points */}
+        {exp.points.length > 1 && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="mt-3 text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline"
+          >
+            {expanded ? "Read Less" : "Read More"}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
