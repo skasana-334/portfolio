@@ -4,34 +4,40 @@ import Link from 'next/link'
 import Image from 'next/image'
 const Portfolio = () => {
   const portfolios=[
+    
     {
-      id:1,
-      title:'resume Builder',
+        id:1,
+        title:'Ipl Auction Management',
+      src:'/iplauction.jpg',
+      url:'https://github.com/Sammykhan214/ipl_bidding/',
+    },
+    {
+      id:2,
+      title:'Resume Builder',
     src:'/resumebuild.png',
     url:'https://resumebuild334.netlify.app/',
   },
   {
-    id:2,
+    id:3,
     title:'Videomeet',
   src:'/meet.png',
   url:'https://videomeet334.netlify.app/',
 },
-    {
-        id:3,
-        title:'Tower Of Hanoi',
-      src:'/toh.jpg',
-      url:'https://toh334.netlify.app/',
-    },
  
   ]
   return (
-    <div id='portfolio' className='w-full'>
-        <div className='max-w-screen-xl mx-auto text-center md:text-left px-4 py-8'>
-       <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize '>projects</h2>
-       <p className='py-4 max-w-3xl text-xl '>These are some of my projects which is built using front end technologies and frameworks such as Reactjs Next.js and Tailwind Css.
-       <br />
-       To explore all my projects click on all projects button.
-       </p>
+  <div id='projects' className='w-full'>
+  <div className='max-w-screen-xl mx-auto px-4 py-8 text-center md:text-left'>
+    <h2 className='text-5xl md:text-7xl tracking-wider text-green-600 capitalize'>
+      Projects
+    </h2>
+    <p className='py-4 max-w-3xl mx-auto md:mx-0 text-xl leading-relaxed'>
+      These are some of my projects showcasing my skills in Backend Development with Java & Spring Boot, 
+      as well as Frontend technologies like React.js, Next.js, and Tailwind CSS.
+      <br />
+      To explore all my projects, click on the "All Projects" button.
+    </p>
+  
        <div className='max-w-5xl  grid md:grid-cols-2 gap-20'>
       {
         portfolios.map(({id,title,src,url})=>(
