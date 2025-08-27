@@ -6,16 +6,23 @@ import {   FaGithub } from 'react-icons/fa'
 import Image from 'next/image'
 const portfolios=[
   {
-    id:1,
+ id: 1,
+title: 'IPL Auction',
+src: '/iplauction.jpg',
+name: 'iplauction',
+git: 'https://github.com/Sammykhan214/ipl_bidding',
+des: '👉🏻 IPL Auction is a full-stack web application that simulates the Indian Premier League player auction. Built with React.js for the frontend and Spring Boot with MySQL for the backend, it enables real-time bidding, team management, and player statistics tracking. With live auction updates and an interactive UI, it provides an engaging experience for both admins and viewers.'
+  },
+    { id:2,
     title:'Resume Builder',
   src:'/resumebuild.png',
   name:'resumebuild',
   url:'https://resumebuild334.netlify.app/',
   git:'https://github.com/skasana-334/ResumeBuild',
 des:'👉🏻Resume Builder is a web application that helps users create professional resumes quickly and easily. With its user-friendly interface and various color options for downloading, users can build a resume that highlights their skills, experience, and achievements.  With Resume Builder, users can create a polished and professional resume in just a few clicks. '
-},
+    },
 {
-  id:2,
+  id:3,
   title:'Videomeet',
 src:'/meet.png',
 name:'meet',
@@ -24,22 +31,13 @@ git:'https://github.com/skasana-334/videomeet',
 des:'➡ A video chat application allows users to communicate with each other through real-time video and audio. With its  easy-to-use features, users can connect with friends, family, or colleagues from anywhere in the world. The application typically includes features such as group video calls, screen sharing, and instant messaging, making it a versatile tool for both personal and professional communication. With a video chat application, users can stay connected and collaborate effectively, no matter where they are.'
 },
   {
-    id:3,
+    id:4,
     title:'Tower Of Hanoi',
   src:'/toh.jpg',
   name:'toh334',
   url:'https://toh334.netlify.app/',
   git:'https://github.com/skasana-334/Towerofhonoi-334',
 des:'👉🏻It is basically a animated site in which user can get the visual idea of the one of the famous problem of recursion known as Tower Of Honoi.In this site there are two buttons one for moving the disks and one for to know the future valid moves.'
-},
-{
-    id:4,
-    title:'Dhoondo',
-  src:'/google.jpg',
-  name:'dhoondo',
-  url:'https://dhoondo.netlify.app/',
-  git:'https://github.com/skasana-334/Dhoondo-334',
-  des:'👉 Dhoondo is a google clone which is based on react js in which we can search anything and get the data in form of images,videos ,links etc.'
 },
 {
     id:5,
