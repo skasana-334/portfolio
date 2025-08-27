@@ -6,28 +6,29 @@ export const getStaticProps=async()=>{
   const portfolios=[
     {
       id:1,
+      title:'Ipl Auction Management',
+    src:'/iplauction.jpg',
+    name:'iplauction',
+  },
+    {
+      id:2,
       title:'Resume Builder',
     src:'/resumebuild.png',
     name:'resumebuild',
   },
   {
-    id:2,
+    id:3,
     title:'Videomeet',
   src:'/meet.png',
   name:'meet',
 },
     {
-        id:3,
+        id:4,
         title:'Tower Of Hanoi',
       src:'/toh.jpg',
       name:'toh334',
     },
-    {
-        id:4,
-        title:'Dhoondo',
-      src:'/google.jpg',
-      name:'dhoondo',
-    },
+    
     {
         id:5,
         title:'Weather App',
