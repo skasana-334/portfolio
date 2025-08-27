@@ -14,30 +14,36 @@ const Nav = () => {
       id:1,
       link:'home'
     },
-     {
-      id:2,
-      link:'portfolio'
+    {id:2,
+      link:'experience'
     },
-    {
-      id:2,
-      link:'coding'
+     {
+      id:3,
+      link:'projects'
     },
     {
       id:4,
+      link:'coding'
+    },
+    {
+      id:5,
       link:'skills'
     },
      {
-      id:5,
+      id:6,
       link:'about'
     },
     
      {
-      id:6,
+      id:7,
       link:'contact'
     },
   ]
+  const icons=[
+    {id:"github",icon:<FaGithub/>,url:'https://www.linkedin.com/in/sagar-kasana-49a493216/'},{id:"linkedin",icon:<FaLinkedin/>,url:'https://github.com/skasana-334'},{id:"instagram",icon:<FaInstagram/>,url:'https://www.instagram.com/'},
+  ]
   return (
-    <div className={`w-full h-20 z-10 fixed ${`bg-white`} text-black  ${pgscroll&&'bg-[#3D3C42] text-[#faf4f4]'}`}>
+    <div className={`w-full h-20 z-10 fixed ${`bg-white`} text-black  ${pgscroll&&'bg-[#3D3C42] text-[#faf4f4] '}`}>
       <div className='flex justify-between items-center p-4 w-full h-full max-w-screen-xl mx-auto'>
         <Link href='/#home'>
             <h1 className='text-3xl lg:text-4xl uppercase underline underline-offset-2 cursor-pointer tracking-wider '>sagar</h1></Link>
