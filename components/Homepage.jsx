@@ -3,6 +3,7 @@ import React from 'react'
 import sagar from '/public/sagar.jpg'
 import Link from 'next/link'
 import {MdExpandMore} from 'react-icons/md'
+
 const Homepage = () => {
   return (
     <div id='home' className='w-full '>
@@ -15,9 +16,9 @@ const Homepage = () => {
    
    <div className='max-w-screen-xl mx-auto w-full h-full pt-24 p-4 flex flex-col justify-around items-center'>
 <h1 className='text-7xl text-gray-500 '>“Hi <span className='text-cyan-600'>there!</span>”</h1>
-<p className='max-w-sm text-xl text-center t'>“Welcome to my portfolio! I’m a Software Engineer with a good knowledge of DSA and interested front-end development. Take a look at my work and see what I can do.”</p>
+<p className='max-w-sm text-xl text-center t'>“Welcome to my portfolio! I’m a Backend Developer (Java, Spring Boot, MySQL) with strong knowledge of DSA and also exploring Frontend with React. Take a look at my work and see what I can do”</p>
 <div className='flex justify-center items center gap-x-4  '>
-<Link href='/Resume_Sagar_Kasana.pdf' download={true}>
+<Link href='/Resume_SagarKasana_FullStack.pdf' download={true}>
 <div className='bg-green-500 p-2 font-semibold uppercase flex justify-center items-center text-white rounded-md px-7 my-6 tracking-wider group cursor-pointer '>Resume
 <span className='-rotate-90 group-hover:translate-x-3'><MdExpandMore size={25}></MdExpandMore></span>
 </div>
